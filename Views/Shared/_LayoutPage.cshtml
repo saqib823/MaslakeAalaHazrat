@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <title>Maslak-e-Aala Hazrat</title>
+  <meta name="description" content="free website template" />
+  <meta name="keywords" content="enter your keywords here" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="~/Test/css/style.css" />
+  <script type="text/javascript" src="~/Test/js/jquery.min.js"></script>
+  <script type="text/javascript" src="~/Test/js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="~/Test/js/jquery.nivo.slider.pack.js"></script>
+  <script type="text/javascript">
+      $(window).load(function () {
+          $('#slider').nivoSlider();
+      });
+  </script> 
+</head>
+
+<body>
+  <div id="main">
+
+	<div id="menubar">
+	  <div id="welcome">
+	  <h1><font size="6" color="white"> Maslak-e-Aala Hazrat </font></h1>
+	  </div><!--close welcome-->
+      <div id="menu_items">
+	    <ul id="menu">
+          <li class="current"><a>@Html.ActionLink("Home", "Index", "Home")</a></li>
+		  <li><a href="http://www.dawateislami.net/bookslibrary/?mt=&filter=&month=safar&lang=">About</a></li>
+          <li><a>@Html.ActionLink("Contact Us", "Contact", "Home")</a></li>
+        </ul>
+      </div><!--close menu-->
+    </div><!--close menubar-->	
+
+	<div id="site_content">		
+
+	  <div id="banner_image">
+	    <div id="slider-wrapper">        
+          <div id="slider" class="nivoSlider">
+			<img src="~/Test/images/banner1.png" alt="" />
+			<img src="~/Test/images/banner2.png" alt="" />
+			<img src="~/Test/images/banner3.png" alt="" />
+			<img src="~/Test/images/banner4.png" alt="" />
+		  </div><!--close slider-->
+		</div><!--close slider_wrapper-->
+	  </div><!--close banner_image-->	
+
+	  <div class="sidebar_container">       
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h2>New Website</h2>
+            <p>Welcome to our new website. Please have a look around, any feedback is much appreciated.</p>
+          </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->     		
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h2>Latest Update</h2>
+            <h3>February 2013</h3>
+            <p>Welcome to our new website. Please have a look around, any feedback is much appreciated.</p>         
+		  </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h3>January 2013</h3>
+            <p>Welcome to our new website. Please have a look around, any feedback is much appreciated.</p>         
+		  </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->  		
+      </div><!--close sidebar_container-->		  
+	 
+	  @RenderBody()
+	
+	  <div id="content_beige">
+	    <div class="content_beige_container_box">
+		  <h4><font size="6" color="" face="jameel noori nastaleeq"> جامع مسجد محمدیہ رضویہ </font></h4>
+	      <p> 461, F-Block, Gulshan-e-Ravi Lahore, Pakistan</p>
+		  <div class="readmore">
+		    <a href="#">Read more</a>
+		  </div><!--close readmore-->
+	    </div><!--close content_beige_container_box-->
+        <div class="content_beige_container_box">
+         <h4><font size="6" color=""> Gallery </font></h4>
+	      <p> Rare Moments: Now you can see the amazing views</p>
+	      <div class="readmore">
+		    <a>@Html.ActionLink("Images", "Gallery", "Home")</a>
+		  </div><!--close readmore-->
+	    </div><!--close content_beige_container_box-->
+        <div class="content_beige_container_boxl">
+		  <h4><font size="6" color="" face="jameel noori nastaleeq"> انجمن خدام المسلمین </font></h4>
+	      <p> All the members belong to the management of Masjid & Worshipers </p>
+	      <div class="readmore">
+		    <a href="#">Read more</a>
+		  </div><!--close readmore-->	  
+	    </div><!--close content_beige_container_box1-->      
+	    <br style="clear:both"/>
+      </div><!--close content_beige--> 	
+	</div><!--close site_content--> 
+  
+  </div><!--close main-->
+  
+  <div id="footer">
+	  <p><b>Copyright &copy Maslak-e-Aala Hazrat | All Rights Reserved | Website Designed by <a href="https://www.facebook.com/hafizmuhammadsaqib.amin">Hafiz Muhammad Saqib Amin</a></b></p>
+  </div><!--close footer-->  
+  
+</body>
+</html>
+
+</html>
